@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<div>
+    <a [routerLink]="['home']">Home</a> ||
+     <a [routerLink]="['student']">Student</a>||
+     <a [routerLink]="['profile']">Profile</a>
+     <hr/>
+     <router-outlet></router-outlet>
+</div>

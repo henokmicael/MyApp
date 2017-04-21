@@ -1,0 +1,12 @@
+<h1>
+   Student Page!
+ </h1>
+ <div>  
+   <input #id > <button (click)="getProfile(id.value)">Get Profile</button> 
+   <ul *ngFor="let stu of students">
+    <li><a href="/profile?id={{stu.id}}" >{{stu.name}}</a></li>
+  </ul>
+ </div>
+
+<router-outlet></router-outlet>
+ 
